@@ -1,5 +1,3 @@
-library(plotly)
-
 pageAppUI <- function(id) {
   ns <- NS(id)
   
@@ -39,36 +37,36 @@ pageAppUI <- function(id) {
             div(class="sliders col-lg-5 col-sm-12 col-lg-pull-7",
                 div(class="sliders-panel",class="col-lg-10 col-sm-12",
                              createFilterPanel(ns("treats-panel"), "Pick your Christmas treats and the amount:", 
-                             div(class="treats",
-                                 fluidRow(
-                                   uiOutput(ns("cookiesSlider")),
-                                   uiOutput(ns("cookiesDisplay"))
-                                 ),
-                                 fluidRow(
-                                   uiOutput(ns("piesSlider")),
-                                   uiOutput(ns("piesDisplay"))
-                                 ),
-                                 fluidRow(
-                                   uiOutput(ns("breadSlider")),
-                                   uiOutput(ns("breadDisplay"))
-                                 ),
-                                 fluidRow(
-                                   uiOutput(ns("calendarSlider")),
-                                   uiOutput(ns("calendarDisplay"))
-                                 ),
-                                 fluidRow(
-                                   uiOutput(ns("pavlovaSlider")),
-                                   uiOutput(ns("pavlovaDisplay"))
-                                 ),
-                                 fluidRow(
-                                   uiOutput(ns("newTreat"))
-                                   
-                                 ),
-                                 fluidRow(
-                                   uiOutput(ns("customTreatError"))
-                                 )
-                             ),
-                             collapsed = F)
+                               div(class="treats",
+                                   fluidRow(
+                                     uiOutput(ns("cookiesSlider")),
+                                     uiOutput(ns("cookiesDisplay"))
+                                   ),
+                                   fluidRow(
+                                     uiOutput(ns("piesSlider")),
+                                     uiOutput(ns("piesDisplay"))
+                                   ),
+                                   fluidRow(
+                                     uiOutput(ns("breadSlider")),
+                                     uiOutput(ns("breadDisplay"))
+                                   ),
+                                   fluidRow(
+                                     uiOutput(ns("calendarSlider")),
+                                     uiOutput(ns("calendarDisplay"))
+                                   ),
+                                   fluidRow(
+                                     uiOutput(ns("pavlovaSlider")),
+                                     uiOutput(ns("pavlovaDisplay"))
+                                   ),
+                                   fluidRow(
+                                     uiOutput(ns("newTreat"))
+                                     
+                                   ),
+                                   fluidRow(
+                                     uiOutput(ns("customTreatError"))
+                                   )
+                               )
+                             )
                 )
             )
             # Sliders end
@@ -105,8 +103,8 @@ pageAppUI <- function(id) {
                                           fluidRow(
                                             uiOutput(ns("customExerciseError"))
                                           )
-                                      ),
-                                      collapsed = F)
+                                      )
+                    )
                 )
               ),
             div(class="treat-exercise-outputs col-lg-7 col-sm-12 ",

@@ -161,7 +161,10 @@ label {
     top: 10px;
 }
 
-.irs-slider {
+.irs{
+  height: 40px;
+}
+.irs-handle {
       background-image: url(../img/Icons/Exercise_presents.svg) !important;
     background-color: transparent !important;
     width: 30px !important;
@@ -209,7 +212,6 @@ label {
 
 .input-display {
     height: 4rem;
-    /*width: 9rem; */
     padding: 0.8rem 0;
     text-align: center;
     background: white;
@@ -251,8 +253,6 @@ label {
     position: relative;
     transition: all 0.2s ease;
     box-shadow: 0 0 0;
-   /* margin-top: -0.5rem;
-    float: right; */
     color: white;
 }
 
@@ -269,10 +269,10 @@ label {
 
 .treats-output, .exercise-output {
     background: white;
-        margin: 20px 0;
+    margin: 20px 0;
     width: calc(50% - 10px);
-        transition: all 0.4s ease;
-        color: #d12e12;
+    transition: all 0.4s ease;
+    color: #d12e12;
 }
 
 
@@ -340,15 +340,6 @@ button.info-button:hover {
     fill-opacity: 1;
     white-space: pre;
     font-weight: bold !important;
-}
-
-
-.bold {
-  font-weight: bold;
-}
-
-.italic {
-  font-style: italic;
 }
 
 .item-title {

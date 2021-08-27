@@ -1,8 +1,5 @@
-library(stringr)
-library(readxl)
-
 # Backend for Cookie Explorer
-pageApp <- function(input, output, session, name, moduleControl) {
+pageApp <- function(input, output, session) {
   
   ns <- session$ns
   
@@ -389,12 +386,25 @@ pageApp <- function(input, output, session, name, moduleControl) {
   getPopoverContent <- function(row, isTreats, prefix) {
     unit <- row$unit
     if(isTreats){
-      paste0(
-        '<div class="popover-body row">  <img class="col-sm-3" src="img/Icons/', prefix, row$keys, '.svg"/> <div class="popover-text col-sm-9"> <div class="popover-heading">Calories per ', unit ,': <span class="bold italic">', row$calories,'</span></div> <div class="popover-details">Total calories added: <span class="bold italic">', as.numeric(row$calories) * as.numeric(row$values), '</span></div></div>')
-      
-    } else {
-      paste0('<div class="popover-body row">  <img class="col-sm-3" src="img/Icons/', prefix, row$keys, '.svg"/> <div class="popover-text col-sm-9"> <div class="popover-heading">Calories burned per ', unit ,': <span class="bold italic">', row$calories,'</span></div> <div class="popover-details">Total calories burnt: <span class="bold italic">', as.numeric(row$calories) * as.numeric(row$values), '</span></div></div>')
+      perCal <- ""
+      totalCal <- "added"
+    }else{
+      perCal <- " burned"
+      totalCal <- "burnt"
     }
+    
+
+    paste0(
+      '<div class="popover-body row">', 
+          '<img class="col-sm-3" src="img/Icons/', prefix, row$keys, '.svg"/>',
+          '<div class="popover-text col-sm-9">', 
+              '<div class="popover-heading">',
+                  'Calories',perCal,' per ', unit ,': <span><strong><i>', row$calories,'</i></strong></span>',
+              '</div>',
+              '<div class="popover-details">',
+                  'Total calories ',totalCal,': <span><strong><i>', as.numeric(row$calories) * as.numeric(row$values), '</i></strong></span>',
+              '</div>',
+          '</div>')
   }
   
   
