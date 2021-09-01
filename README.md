@@ -1,4 +1,4 @@
-# Cookie Explorer
+# Custom Theming
 
 An R Shiny application for tracking your treats and exercises over the Christmas period. We've created this app for Christmas 2018 and it shows how you can custom-theme sliders and other UI elements. It also demonstrates how you can blend in images based on reactive values and add hovers to it.
 
