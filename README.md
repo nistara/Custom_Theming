@@ -6,7 +6,7 @@ See it in action [here](https://shiny.epi-interactive.com/cookie-explorer)
 
 ![alt text](www/cookie-explorer.PNG)
 
-##Our customisation
+## Our customisation
 
 *  Slider images
 *  Animated plots
