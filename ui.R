@@ -3,23 +3,13 @@ shinyUI(
     bootstrapPage(NULL, theme = "css/bootstrap.min.css"),#forces BS theme and BS JS libraries to lazy load
     icon(NULL, class = NULL, lib = "font-awesome"),
     tags$head(
-      HTML("
-           <!-- Global site tag (gtag.js) - Google Analytics -->
-           <script async src='https://www.googletagmanager.com/gtag/js?id=UA-79733995-4'></script>
-           <script>
-           window.dataLayer = window.dataLayer || [];
-           function gtag(){dataLayer.push(arguments);}
-           gtag('js', new Date());
-           gtag('config', 'UA-79733995-4');
-           </script>
-           "),
       tags$link(rel = "stylesheet", type = "text/css", href = "css/font-awesome.min.css"),
       tags$link(rel = "stylesheet", type = "text/css", href = "css/custom.css"),
-      tags$link(rel = "stylesheet", href = "https://fonts.googleapis.com/css?family=Lato")
+      tags$link(rel = "stylesheet", href = "https://fonts.googleapis.com/css?family=Lato"),
+      tags$script(src="js/util.js"),
+      tags$script(src='js/fallingsnow_v6.js')
     ),
-    tags$script(src='js/fallingsnow_v6.js'),
     div(id="loadingOverlay",
-        # HTML("<i id='loadingSpinner' class='fa fa-refresh fa-spin fa-4x fa-fw'></i>")
         HTML('<img id="loadingSpinner" src="img/Text_Start.svg"/>')
     ),
     div(id="snowflakeContainer", HTML('<p class="snowflake">*</p>')),
@@ -33,7 +23,6 @@ shinyUI(
     G_familyLB,
     G_couchLB,
     G_shoppingLB,
-    G_chimneyLB,
-    tags$script(src="js/util.js")
+    G_chimneyLB
   )
 )

@@ -231,9 +231,6 @@ pageApp <- function(input, output, session) {
   # ====== Create the Chart ======#
   
   output$caloriesComparison <- renderPlotly({
-    
-    
-    
     # Axis properties - a = x-axis, b = y-axis
     a <- list(visible=T, showgrid=F, showticklabels = F, 
               showline=T, title=" ", mirror=F, zeroline=F, linecolor="#14505E", linewidth=2, rangemode = "nonnegative", range=c(0, 10000))
