@@ -1,4 +1,4 @@
-# Cookie Explorer
+# Custom Theming
 
 An R Shiny application for tracking your treats and exercises over the Christmas period. We've created this app for Christmas 2018 and it shows how you can custom-theme sliders and other UI elements. It also demonstrates how you can blend in images based on reactive values and add hovers to it.
 
@@ -6,8 +6,7 @@ See it in action [here](https://shiny.epi-interactive.com/cookie-explorer)
 
 ![alt text](www/cookie-explorer.PNG)
 
-## Custom theming
-Some of our custom tweaks include:
+## Our customisation
 
 *  Slider images
 *  Animated plots
@@ -45,3 +44,14 @@ We use [Plotly](https://plot.ly/) for our charts. Add CSS animations to bring th
     visibility: visible;
 }
 ```
+
+
+
+
+---
+
+Code created by [Epi-interactive](https://www.epi-interactive.com) 
+
+As always, our expert team is here to help if you want custom training, would like to take your dashboards to the next level or just need an urgent fix to keep things running. Just get in touch for a chat.
+
+[https://www.epi-interactive.com/contact](https://www.epi-interactive.com/contact)
