@@ -1,8 +1,3 @@
-/*$(document.body).on("click", "[nav-to]",
-function (e) {
-  Shiny.onInputChange("navigateTo", $(e.currentTarget).attr("nav-to"));
-});*/
-
 // URL input binding
 // This input binding is very similar to textInputBinding from
 // shiny.js.
@@ -42,18 +37,6 @@ $.extend(navInputBinding, {
   unsubscribe: function(el) {
     $(el).off('.navInputBinding');
   },
-
-  // Receive messages from the server.
-  // Messages sent by updateNavInput() are received by this function.
-/*  receiveMessage: function(el, data) {
-    if (data.hasOwnProperty('value'))
-      this.setValue(el, data.value);
-
-    if (data.hasOwnProperty('label'))
-      $(el).parent().find('label[for="' + $escape(el.id) + '"]').text(data.label);
-
-    $(el).trigger('change');
-  },*/
 
   // This returns a full description of the input's state.
   // Note that some inputs may be too complex for a full description of the
@@ -156,7 +139,6 @@ Shiny.addCustomMessageHandler("unfade-page", function(e) {
   console.log('fading');
     $(".load-fade").addClass("out");
 })
-//GL
 
 
 

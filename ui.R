@@ -5,10 +5,10 @@ shinyUI(
     tags$head(
       tags$link(rel = "stylesheet", type = "text/css", href = "css/font-awesome.min.css"),
       tags$link(rel = "stylesheet", type = "text/css", href = "css/custom.css"),
-      tags$link(rel = "stylesheet", href = "https://fonts.googleapis.com/css?family=Lato"),
-      tags$script(src="js/util.js"),
-      tags$script(src='js/fallingsnow_v6.js')
+      tags$link(rel = "stylesheet", href = "https://fonts.googleapis.com/css?family=Lato")
     ),
+    tags$script(src="js/util.js"),
+    tags$script(src='js/fallingsnow_v6.js'),
     div(id="loadingOverlay",
         HTML('<img id="loadingSpinner" src="img/Text_Start.svg"/>')
     ),
