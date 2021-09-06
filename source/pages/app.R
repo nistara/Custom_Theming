@@ -1,3 +1,9 @@
+##################################
+# Created by EPI-interactive
+# 17 May 2019
+# https://www.epi-interactive.com
+##################################
+
 pageAppUI <- function(id) {
   ns <- NS(id)
   
