@@ -1,3 +1,9 @@
+##################################
+# Created by EPI-interactive
+# 17 May 2019
+# https://www.epi-interactive.com
+##################################
+
 shinyUI(
   tagList(
     bootstrapPage(NULL, theme = "css/bootstrap.min.css"),#forces BS theme and BS JS libraries to lazy load
