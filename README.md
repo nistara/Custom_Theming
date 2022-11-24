@@ -1,6 +1,6 @@
 # Custom Theming
 
-An R Shiny application for tracking your treats and exercises over the Christmas period. We've created this app for Christmas 2018 and it shows how you can custom-theme sliders and other UI elements. It also demonstrates how you can blend in images based on reactive values and add hovers to it.
+An R Shiny application for tracking your treats and exercises over the Christmas period. We created this app for our 2018 Christmas game and it shows how you can custom-theme sliders and other UI elements. It also demonstrates how you can blend in images based on reactive values and add hovers to it.
 
 See it in action [here](https://shiny.epi-interactive.com/cookie-explorer)
 
@@ -18,7 +18,7 @@ As well as extending standard Shiny components like:
 *  Tooltips and modals
 
 ### Slider images
-Customise your sliders by adding a custom `background-image`.
+Customise your slider markers by adding a custom `background-image`.
 ``` css
 
 .irs-slider {
